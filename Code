@@ -27,10 +27,11 @@ public:
     }
 
     Flashcard(string q, string a, int s = 0, int rc = 0) 
+    
         : question(q), answer(a), score(s), reviewCount(rc) {}
 
     void updateScore(int s) {
-        score = max(1, min(3, s)); // Ensure score stays between 1 and 3
+        score = max(1, min(3, s)); 
         reviewCount++;
     }
 };
