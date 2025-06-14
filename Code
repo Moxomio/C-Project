@@ -4,6 +4,7 @@
 #include <ctime>
 #include <algorithm>
 #include <random>
+#include <windows.h>
 #include <stdlib.h> // For system("cls")
 
 using namespace std;
@@ -307,6 +308,7 @@ public:
 
 // -------------------------- Main Function --------------------------
 int main() {
+    SetConsoleOutputCP(CP_UTF8);
     FlashcardApp app;
     app.run();
     return 0;
